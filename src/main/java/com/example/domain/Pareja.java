@@ -1,4 +1,4 @@
-package com.example;
+package com.example.domain;
 
 import javax.persistence.*;
 
@@ -12,7 +12,7 @@ public class Pareja {
     @GeneratedValue
     //es equivalente a @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    @OneToOne
+    @OneToOne // establece el tipo de asociación entre pareja y persona
     private Persona p1;
     @OneToOne
     private Persona p2;
