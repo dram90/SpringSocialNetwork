@@ -8,9 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-/**
- * Created by professor on 14/07/2016.
- */
+
 @Service
 @Transactional
 public class SocialNetworkService {

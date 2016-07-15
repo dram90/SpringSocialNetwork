@@ -6,9 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-/**
- * Created by professor on 14/07/2016.
- */
+
 public interface ParejaRepository extends JpaRepository<Pareja,Long>{
 
     @Query("SELECT pareja " +
