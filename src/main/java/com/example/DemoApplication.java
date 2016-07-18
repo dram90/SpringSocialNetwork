@@ -34,13 +34,32 @@ public class DemoApplication {
 		novia.setNombre("novia");
 		novia.setEdad(23);
 
+		Persona ismael = new Persona();
+		ismael.setNombre("Ismael");
+		ismael.setEdad(29);
+
+		Persona judith = new Persona();
+		judith.setNombre("Judith");
+		judith.setEdad(25);
+
 		socialNetworkService.añadirPersona(ivan);
 		socialNetworkService.añadirPersona(daniel);
 		socialNetworkService.añadirPersona(novia);
+		socialNetworkService.añadirPersona(ismael);
+		socialNetworkService.añadirPersona(judith);
 
 		socialNetworkService.añadirPareja(ivan,novia);
 
 		System.out.println("La pareja de ivan es ");
 		System.out.println(socialNetworkService.getPareja(ivan));
+
+		socialNetworkService.addAmistades(ivan,ismael);
+		socialNetworkService.addAmistades(judith,ivan);
+
+		System.out.println("Los amigos de Ivan son: ");
+		System.out.println(socialNetworkService.getAmistades(ivan));
+
+
+
 	}
 }
